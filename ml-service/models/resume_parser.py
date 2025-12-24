@@ -8,28 +8,24 @@ class ResumeParser:
     Extracts structured information from resume text.
     Uses spaCy for NLP and regex for pattern matching.
     """
-    
+
     def __init__(self):
-        """Initialize parser with spaCy model and skills database"""
-        # Load spaCy's English language model
-        try:
-            self.nlp = spacy.load("en_core_web_sm")
-        except OSError:
-            print("Downloading spaCy model...")
-            import subprocess
-            subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-            self.nlp = spacy.load("en_core_web_sm")
-        
-        # Load skills database from JSON file
-        skills_path = os.path.join(os.path.dirname(__file__), '../data/skills.json')
-        with open(skills_path, 'r') as f:
+        # Load spaCy model (must be preinstalled)
+        self.nlp = spacy.load("en_core_web_sm")
+
+        # Load skills database
+        skills_path = os.path.join(
+            os.path.dirname(__file__),
+            "../data/skills.json"
+        )
+
+        with open(skills_path, "r") as f:
             skills_data = json.load(f)
-            
-            # Flatten all skills from all categories into one list
-            # Convert to lowercase for case-insensitive matching
-            self.skills_db = []
-            for category, skills in skills_data.items():
-                self.skills_db.extend([skill.lower() for skill in skills])
+
+        self.skills_db = []
+        for _, skills in skills_data.items():
+            self.skills_db.extend(skill.lower() for skill in skills)
+
     
     def extract_skills(self, text):
         """
