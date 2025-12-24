@@ -1,0 +1,38 @@
+{
+  "programming_languages": [
+    "Python", "Java", "JavaScript", "TypeScript", "C++", "C#", "Go", "Rust",
+    "Ruby", "PHP", "Swift", "Kotlin", "Scala", "R", "MATLAB", "Perl"
+  ],
+  "web_frameworks": [
+    "React", "Angular", "Vue.js", "Vue", "Next.js", "Node.js", "Express.js",
+    "Spring Boot", "Spring", "Django", "Flask", "FastAPI", "Ruby on Rails",
+    "Laravel", "ASP.NET", "Svelte"
+  ],
+  "databases": [
+    "MySQL", "PostgreSQL", "MongoDB", "Redis", "Cassandra", "Oracle",
+    "SQL Server", "SQLite", "DynamoDB", "Elasticsearch", "Neo4j", "SQL"
+  ],
+  "cloud_devops": [
+    "AWS", "Azure", "Google Cloud", "GCP", "Docker", "Kubernetes", "K8s",
+    "Jenkins", "CI/CD", "Terraform", "Ansible", "Git", "GitHub", "GitLab",
+    "CircleCI", "Travis CI"
+  ],
+  "ml_ai": [
+    "Machine Learning", "ML", "Deep Learning", "TensorFlow", "PyTorch", "Keras",
+    "scikit-learn", "sklearn", "NLP", "Computer Vision", "Neural Networks", "AI",
+    "Natural Language Processing", "OpenCV"
+  ],
+  "data_science": [
+    "Data Analysis", "Pandas", "NumPy", "Matplotlib", "Seaborn",
+    "Jupyter", "Data Visualization", "Statistics", "Big Data", "Spark",
+    "Apache Spark", "Hadoop"
+  ],
+  "mobile": [
+    "Android", "iOS", "React Native", "Flutter", "Xamarin", "Swift", "Kotlin"
+  ],
+  "other_skills": [
+    "REST API", "RESTful", "GraphQL", "Microservices", "Agile", "Scrum",
+    "Test Driven Development", "TDD", "Unit Testing", "Linux", "Shell Scripting",
+    "Bash", "API Development", "Web Services", "JSON", "XML", "HTML", "CSS"
+  ]
+}

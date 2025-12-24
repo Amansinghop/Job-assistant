@@ -1,0 +1,18 @@
+# Node / React
+node_modules/
+dist/
+
+# Python / ML
+venv/
+__pycache__/
+*.pyc
+
+# Java / Spring Boot
+target/
+*.class
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
