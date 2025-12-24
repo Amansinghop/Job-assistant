@@ -116,6 +116,6 @@ if __name__ == '__main__':
     logger.info("Starting Python ML Service on port 5000...")
     app.run(
         host='0.0.0.0',  # Listen on all network interfaces
-        port=5000,        # Port number
-        debug=True        # Enable debug mode (auto-reload on code changes)
+        port=5000        # Port number
+        
     )
