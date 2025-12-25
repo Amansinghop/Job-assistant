@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL - change this when deploying
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'desirable-encouragement-production.up.railway.app';
 
 // Create axios instance with default config
 const api = axios.create({
